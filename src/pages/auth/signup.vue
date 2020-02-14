@@ -88,7 +88,8 @@ export default {
                     payload.email = this.email;
                     payload.password = this.password;
                     payload.profile_image = this.profile_image;
-                    alert(JSON.stringify(payload));
+                    this.$store.dispatch('signUp' ,payload);
+                    //alert(JSON.stringify(payload));
                 }
         }
     }

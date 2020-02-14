@@ -97,6 +97,7 @@
 </template>
 <script>
   import { Device }  from 'framework7/framework7-lite.esm.bundle.js';
+  import firebase from 'firebase';
   import cordovaApp from '../js/cordova-app.js';
   import routes from '../js/routes.js';
 
@@ -110,6 +111,8 @@
     appId: "1:855024568126:web:3c2cfcfa521d3bf1e80e6f",
     measurementId: "G-5CPMSTFKGG"
   };
+
+  firebase.initializeApp(firebaseConfig)
 
 
   export default {
